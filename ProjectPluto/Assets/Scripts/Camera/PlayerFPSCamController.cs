@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Player camera controller
 /// </summary>
-public class PlayerCamController : MonoBehaviour
+public class PlayerFPSCamController : MonoBehaviour
 {
     //Camera state variables.
     enum CameraState { Locked, Unlocked };
