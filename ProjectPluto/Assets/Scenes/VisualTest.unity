@@ -563,13 +563,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0.046862092, z: -0, w: 0.99890137}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -5.372, z: 0}
 --- !u!1 &1204861940
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,6 +765,7 @@ GameObject:
   - component: {fileID: 1682650876}
   - component: {fileID: 1682650875}
   - component: {fileID: 1682650874}
+  - component: {fileID: 1682650877}
   m_Layer: 0
   m_Name: TestMediumSprite (1)
   m_TagString: Untagged
@@ -846,6 +847,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &1682650877
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682650873}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.2, y: 0.2}
+    newSize: {x: 0.2, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.007995046, y: 0.08714136}
+      - {x: -0.06828198, y: 0.06385938}
+      - {x: -0.09142757, y: 0.009433225}
+      - {x: -0.06899928, y: -0.051567487}
+      - {x: -0.033281963, y: -0.08371237}
+      - {x: 0.022954138, y: -0.0879119}
+      - {x: 0.056571025, y: -0.06828197}
+      - {x: 0.08114065, y: -0.037281245}
+      - {x: 0.08285511, y: 0.03956964}
+      - {x: 0.046571027, y: 0.07942613}
 --- !u!1 &1884442642
 GameObject:
   m_ObjectHideFlags: 0
