@@ -22,6 +22,11 @@ public class PlayerFPSCamController : MonoBehaviour
     /// </summary>
     public bool invert_y = false;
 
+    /// <summary>
+    /// Whether or not the camera is frozen. 
+    /// </summary>
+    public bool camera_frozen = false;
+
     void Start()
     {
         //Lock the cursor to start
@@ -49,7 +54,7 @@ public class PlayerFPSCamController : MonoBehaviour
     void HandleLocked()
     {
         //If we get the cancel key unlock the mouse from camera
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Jump"))
         {
             UnlockCamera();
         }
@@ -85,7 +90,7 @@ public class PlayerFPSCamController : MonoBehaviour
     void HandleUnlocked()
     {
         //If we get the mouse button one key lock the mouse back to camera
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Jump"))
         {
             LockCamera();
         }
@@ -94,7 +99,7 @@ public class PlayerFPSCamController : MonoBehaviour
     /// <summary>
     /// Helper function taht unlocks the camera and changes the state
     /// </summary>
-    void UnlockCamera()
+    public void UnlockCamera()
     {
         Cursor.lockState = CursorLockMode.None;
         state = CameraState.Unlocked;
@@ -103,7 +108,7 @@ public class PlayerFPSCamController : MonoBehaviour
     /// <summary>
     /// Helper function that locks the camera and changes the state
     /// </summary>
-    void LockCamera()
+    public void LockCamera()
     {
         Cursor.lockState = CursorLockMode.Locked;
         state = CameraState.Locked;
