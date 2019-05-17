@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Changes the mouse cursor according to certain situations
 /// </summary>
-public class AdaptiveCursor : MonoBehaviour
+public class PanAdaptiveCursor : MonoBehaviour
 {
     public Texture2D normalTexture, screenTexture;
 
