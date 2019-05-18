@@ -1325,9 +1325,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  mouse_sensitivity: 1
   invert_y: 0
   camera_frozen: 0
+  clampInDegrees: {x: 360, y: 180}
+  lockCursor: 1
+  sensitivity: {x: 2, y: 2}
+  smoothing: {x: 1, y: 1}
+  targetDirection: {x: 0, y: 0}
+  targetCharacterDirection: {x: 0, y: 0}
+  characterBody: {fileID: 0}
 --- !u!114 &1757122125
 MonoBehaviour:
   m_ObjectHideFlags: 0
