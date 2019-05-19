@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 235002444}
   - component: {fileID: 235002446}
   - component: {fileID: 235002445}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Display
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 380743439}
   - component: {fileID: 380743438}
   - component: {fileID: 380743437}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TestButton(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 514030091}
   - component: {fileID: 514030093}
   - component: {fileID: 514030092}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 876204440}
   - component: {fileID: 876204442}
   - component: {fileID: 876204441}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -857,7 +857,7 @@ GameObject:
   - component: {fileID: 1234729103}
   - component: {fileID: 1234729102}
   - component: {fileID: 1234729101}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -949,7 +949,7 @@ GameObject:
   - component: {fileID: 1512890724}
   - component: {fileID: 1512890723}
   - component: {fileID: 1512890722}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TestButton (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1082,7 +1082,7 @@ GameObject:
   - component: {fileID: 1589960187}
   - component: {fileID: 1589960186}
   - component: {fileID: 1589960190}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Screen
   m_Icon: {fileID: 0}
@@ -1197,7 +1197,7 @@ GameObject:
   - component: {fileID: 1662529443}
   - component: {fileID: 1662529445}
   - component: {fileID: 1662529444}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1485,7 +1485,7 @@ GameObject:
   - component: {fileID: 2038814386}
   - component: {fileID: 2038814385}
   - component: {fileID: 2038814384}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TestButton(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1616,7 +1616,7 @@ GameObject:
   - component: {fileID: 2100333660}
   - component: {fileID: 2100333662}
   - component: {fileID: 2100333661}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
