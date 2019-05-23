@@ -10,7 +10,7 @@ using UnityEditor;
 public class CreateCanvasWithSprite : MonoBehaviour
 {
     [MenuItem("Create/WorldCanvas/Sprite/From Selected")]
-    static void CreateSpriteCanvas()
+    public static GameObject[] CreateSpriteCanvas()
     {
         //Init list of all objs
         GameObject[] objs = new GameObject[Selection.assetGUIDs.Length];
@@ -32,6 +32,7 @@ public class CreateCanvasWithSprite : MonoBehaviour
             Transform img = obj.transform.GetChild(0);
 
             img.GetComponent<Image>().sprite = sprite;
+            obj.name = sprite.name;
 
             //Increment index
             index++;
@@ -42,6 +43,7 @@ public class CreateCanvasWithSprite : MonoBehaviour
         {
             //Match all objs
             MatchSpriteAndCanvas.MatchObjects(objs);
+            return objs;
         }
         else
         {
