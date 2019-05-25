@@ -31,8 +31,11 @@ public class MatchSpriteAndCanvas : MonoBehaviour
         {
             if (obj.GetComponent<Canvas>() == null || obj.GetComponentInChildren<Image>() == null)
             {
-                throw new System.Exception("Error: Can't match an object that doesn't have a Canvas component and Image component. Make sure all selected objects have those properties.");
-            }
+                if(obj.GetComponent<Image>() == null)
+                {
+                    throw new System.Exception("Error: Can't match an object that doesn't have a Canvas component and Image components in children, or just an Image component. Make sure all selected objects have those properties.");
+                }
+            }            
             else if (obj.GetComponentInChildren<Image>().sprite == null)
             {
                 throw new System.Exception("Error: Can't match an object that doesn't have a sprite in its Image component. Make sure all selected objects has a sprite.");
@@ -43,8 +46,16 @@ public class MatchSpriteAndCanvas : MonoBehaviour
         foreach (GameObject obj in objs)
         {
             //Get dimensions of the sprite in this canvas
-            Vector2 dimensions = new Vector2(obj.GetComponentInChildren<Image>().sprite.texture.width, obj.GetComponentInChildren<Image>().sprite.texture.height);
-
+            Vector2 dimensions = Vector2.one;
+            if (obj.GetComponent<Image>() == null)
+            {
+                dimensions = new Vector2(obj.GetComponentInChildren<Image>().sprite.texture.width, obj.GetComponentInChildren<Image>().sprite.texture.height);
+            }
+            else
+            {
+                dimensions = new Vector2(obj.GetComponent<Image>().sprite.texture.width, obj.GetComponent<Image>().sprite.texture.height);
+            }
+        
             //Set the canvas size to be one to one with the sprite
             obj.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, dimensions.x);
             obj.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, dimensions.y);

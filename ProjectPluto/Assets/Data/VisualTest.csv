@@ -1,0 +1,7 @@
+Key,BlockType,Text,FlagSetList,NextBlockList
+0,DialogueBlock,Hello!,,[1: (hadFirstConvo : False)] : [5: (hadFirstConvo : True) : (questioned: True)] : [2: (hadFirstConvo : True)]
+1,DialogueBlock,My name is Bob!,(hadFirstConvo: True),
+2,DecisionBlock,What happened to you! You look terrible!,(questioned : True),[3 : Play it cool.] :  [4 : Tattle on your friends.]
+3,DialogueBlock,Hmm... Alright. If you say so.,(liedTo : True),
+4,DialogueBlock,What terrible friends you have! You should get new ones.,,
+5,DialogueBlock,Good luck on your journey!,,
