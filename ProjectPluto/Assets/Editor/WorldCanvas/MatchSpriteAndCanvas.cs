@@ -11,7 +11,7 @@ public class MatchSpriteAndCanvas : MonoBehaviour
     /// Helpful function that will match the scales and sizes of our sprites and canvases to be one to one.
     /// Can be called from the menu
     /// </summary>
-    [MenuItem("Modify/Match")]
+    [MenuItem("WorldCanvas/Match")]
     public static void Match()
     {
         //Check the selected game objects

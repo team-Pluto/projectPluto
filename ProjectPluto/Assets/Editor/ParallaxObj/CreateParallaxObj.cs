@@ -9,7 +9,7 @@ using UnityEditor;
 /// </summary>
 public class CreateParallaxObj : MonoBehaviour
 {
-    [MenuItem("Create/ParallaxObject/From Selected")]
+    [MenuItem("ParallaxObject/Create/From Selected")]
     public static void CreateParallaxObject()
     {
         //Create a new world canvas with sprite object under the main one

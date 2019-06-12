@@ -13,7 +13,7 @@ public class CreateCanvasEmptySprite : MonoBehaviour
     /// Menu function that creates a worldCanvas with an empty sprite child.
     /// </summary>
     /// <returns></returns>
-    [MenuItem("Create/WorldCanvas/Sprite/Empty")]
+    [MenuItem("WorldCanvas/Create/Sprite/Empty")]
     public static GameObject CreateEmptySprite()
     {
         //Create a world canvas like above

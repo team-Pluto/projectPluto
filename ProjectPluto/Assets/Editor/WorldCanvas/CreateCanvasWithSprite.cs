@@ -9,7 +9,7 @@ using UnityEditor;
 /// </summary>
 public class CreateCanvasWithSprite : MonoBehaviour
 {
-    [MenuItem("Create/WorldCanvas/Sprite/From Selected")]
+    [MenuItem("WorldCanvas/Create/Sprite/From Selected")]
     public static GameObject[] CreateSpriteCanvas()
     {
         //Init list of all objs

@@ -118,3 +118,6 @@ public enum MiscType { Camera, VisualParser, AudioParser };
 
 //Enums for robot status
 public enum RobotStatus { Idle, OnMission, Charging, Damaged, Dead };
+
+//Enums for slot types
+public enum SlotType { HeadType, TorsoType, ArmType, LegType, MiscType };

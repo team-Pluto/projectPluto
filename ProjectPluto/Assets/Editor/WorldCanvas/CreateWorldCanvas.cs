@@ -13,7 +13,7 @@ public class CreateWorldCanvas : ScriptableWizard
     /// Menu function that creates a worldCanvas with nothing at all.
     /// </summary>
     /// <returns></returns>
-    [MenuItem("Create/WorldCanvas/Empty")]
+    [MenuItem("WorldCanvas/Create/Empty")]
     public static GameObject CreateCanvas()
     {
         GameObject obj = new GameObject("WorldCanvas");
